@@ -16,11 +16,5 @@ fs.o: fs.c fs.h
 disk.o: disk.c disk.h
 	$(GCC) -Wall disk.c -c -o disk.o -g
 
-submit345:
-	turnin -c cis345s -p proj3 Makefile p3_report.pdf ${HEADER} ${SRC}
-
-submit545:
-	turnin -c cis545s -p proj3 Makefile p3_report.pdf ${HEADER} ${SRC}
-
 clean:
 	rm tinyfs disk.o fs.o shell.o
